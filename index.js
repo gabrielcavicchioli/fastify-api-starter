@@ -1,2 +1,4 @@
-require('dotenv-safe').config()
+// require('dotenv-safe').config( {
+//   example: './.env.example'
+// })
 require('./server')()
