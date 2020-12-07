@@ -1,5 +1,5 @@
 {
-  "name": "api-profamilia",
+  "name": "fastify-api-starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
