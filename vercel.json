@@ -3,7 +3,7 @@
   "github": {
     "enabled": false
   },
-  "builds": [{
+  "builds": [{ 
     "src": "/index.js",
     "use": "@vercel/node"
   }],
