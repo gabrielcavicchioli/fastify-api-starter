@@ -1,7 +1,7 @@
 module.exports = async (fastify, options) => {
   // fastify.get('/', { preValidation: fastify.authenticate }, require('./findAll')(fastify)) // rota autenticada
-  fastify.get('/', require('./findAll')(fastify))
-  fastify.get('/:id', require('./findById')(fastify))
-  fastify.post('/', require('./create')(fastify))
-  fastify.put('/', require('./update')(fastify))
+  fastify.get('/', require('./handlers/findAll'))
+  fastify.get('/:id', require('./handlers/findById'))
+  fastify.post('/', require('./handlers/create'))
+  fastify.put('/:id', require('./handlers/update'))
 }

@@ -1,12 +1,16 @@
-const model = require('./model')
+const model = require('@models/example')
 
-const findAll = () => model.find()
+const findAll = () => {
+  return model.find()
+}
 
-const findById = id => model.findById(id).exec()
+const findById = async id => {
+  return await model.findById(id)
+}
 
-const save = object => {
+const save = async object => {
   const example = new model(object)
-  return example.save()
+  return await example.save()
 }
 
 const update = async object => {
